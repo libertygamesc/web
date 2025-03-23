@@ -1,0 +1,381 @@
+@import url('https://fonts.cdnfonts.com/css/games');
+
+body {
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto !important;
+  padding: 0 !important;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.space_between {
+  justify-content: space-between;
+}
+
+.align_center {
+  align-items: center;
+}
+
+.justify_center {
+  justify-content: center;
+}
+
+.jutify_end {
+  justify-content: flex-end;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.full_height {
+  height: 100%
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.sm_button {
+  height: 38px;
+}
+
+.nav_main {
+  transition: all 0.5s ease;
+}
+
+.nav_main .button {
+  cursor: pointer;
+}
+
+.nav_main .button:hover {
+  background: rgba(255, 255, 255, 0.155);
+  /*background: rgba(0, 0, 0, 0.355)*/
+}
+
+.banner_default {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.banner_default_cont {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  font-family: 'Games', sans-serif !important;
+  flex-direction: column;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  z-index: 99;
+}
+
+
+
+
+
+.image_login {
+  flex: 1;
+  height: 100%;
+  background-image: url('assets/login.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.image_register {
+  flex: 1;
+  height: 100%;
+  background-image: url('assets/register.jpg');
+  background-position: right;
+  background-size: cover;
+}
+
+
+.image_download {
+  width: 100%;
+  height: 350px;
+  background-image: url('assets/download.jpg');
+  background-position: 100% 40%;
+  background-size: cover;
+  position: relative;
+  border-radius: 8px;
+}
+
+.image_download::after {
+  content: "DOWNLOADS";
+  font-family: 'Games', sans-serif;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  font-size: 60px;
+}
+
+.kit_download {
+  width: 100%;
+  height: 350px;
+  background-image: url('assets/kit.jpg');
+  background-position: 100% 40%;
+  background-size: cover;
+  position: relative;
+  border-radius: 8px;
+}
+
+.kit_download::after {
+  content: "KIT";
+  font-family: 'Games', sans-serif;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  font-size: 60px;
+}
+
+.video_banner {
+  width: 100%;
+  height: 350px;
+  background-image: url('assets/video.jpg');
+  background-position: 100% 20%;
+  background-size: cover;
+  position: relative;
+  border-radius: 8px;
+}
+
+.video_banner::after {
+  content: "VIDEOS";
+  font-family: 'Games', sans-serif;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  font-size: 60px;
+}
+
+.pass_banner {
+  width: 100%;
+  height: 450px;
+  background-position: 100% 90%;
+  background-size: cover;
+  position: relative;
+  border-radius: 8px;
+}
+
+.war_banner {
+  width: 100%;
+  height: 450px;
+  background-image: url('assets/war.jpg');
+  background-position: 100% 60%;
+  background-size: cover;
+  position: relative;
+  border-radius: 8px;
+}
+
+.war_banner::after {
+  content: "WAR STORE";
+  font-family: 'Games', sans-serif;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  font-size: 60px;
+}
+
+.video-responsive {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.image_spin {
+  width: 100%;
+  height: 350px;
+  background-image: url('assets/ticket.jpg');
+  background-position: 100% 25%;
+  background-size: cover;
+  position: relative;
+  border-radius: 8px;
+}
+
+.image_spin::after {
+  content: "LUCKY ROULETTE";
+  font-family: 'Games', sans-serif;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  box-shadow: #121212;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  font-size: 60px;
+}
+
+
+.button_out {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.dfBottom {
+  margin-bottom: 15px;
+}
+
+.classIcon {
+  width: 54px;
+  height: 54px;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #121212;
+}
+
+.cupom {
+  width: 250px;
+  height: 100px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-image: url('assets/cupom.png');
+}
+
+.cupom span {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 3px;
+  left: 40px;
+}
+
+.nation_image {
+  width: 128px;
+  height: 192px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nation_image.capella {
+  background-image: url('assets/capella.jpg');
+}
+
+.nation_image.procyon {
+  background-image: url('assets/procyon.jpg');
+  margin-right: 30px;
+}
+
+.nation_image.disable {
+  filter: grayscale(100);
+  opacity: .5;
+}
+
+.shop_product {
+  border-radius: 5px;
+  object-fit: cover;
+  background: #121314;
+}
+
+.skill_product {
+  border-radius: 5px;
+  object-fit: cover;
+  background: #121314;
+}
+
+.news_detail {
+  cursor: pointer;
+  padding: 15px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.news_detail:hover {
+  background-color: #ededed;
+  ;
+}
+
+.news_detail summary {
+  font-weight: bold;
+}
+
+@keyframes light_1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*.cardDonate:hover{
+  transform: scale(1.05);
+  transition: all 0.5s ease-out;
+}
+
+.donateReward:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}*/
+
+.nation-icon {
+  position: relative;
+}
+
+.nation-icon-1:after {
+  background: url('assets/1_effect.png') no-repeat;
+  background-size: 100%;
+}
+
+.nation-icon-2:after {
+  background: url('assets/2_effect.png') no-repeat;
+  background-size: 100%;
+}
+
+.nation-icon:after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: -30px;
+  top: -20px;
+  animation: light_1 15s linear infinite;
+}
+
+/*  <details class="news_detail">
+          <summary>titulo</summary>corpo
+    </details>*/
