@@ -26,6 +26,7 @@ import Vip from "pages/Vip";
 import ShopBonus from "pages/ShopBonus";
 import Lottery from "pages/Lottery";
 import Account from "pages/Account";
+import Panel from "pages/Panel";
 
 export const RouterConfig = () => {
   return (
@@ -48,6 +49,7 @@ export const RouterConfig = () => {
           <Route path={RANKINGS} element={<Rankings />} />
           <Route path={DOWNLOADS} element={<Downloads />} />
           <Route path={PASSWORD} element={<Password />} />
+          <Route path={PANEL} element={<Panel />} />
           <Route path={SPIN} element={<Spin />} />
           <Route path={PASS} element={<Pass />} />
           <Route path={VIDEOS} element={<Videos />} />

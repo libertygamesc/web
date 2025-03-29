@@ -528,16 +528,16 @@ img {
 }
 
 .nav-link:hover {
-  color: #143ea7;
+  color: #1876b4;
 }
 
 .nav-link-menur:hover {
-  color: #143ea7;
+  color: #1876b4;
 }
 
 @media (min-width: 992px) {
   .nav-link-menur:hover {
-    color: #143ea7;
+    color: #1876b4;
   }
 }
 
@@ -899,7 +899,7 @@ li:last-of-type .dropdown-item::after {
 }
 
 .navbar .language .dropdown-item:hover {
-  color: #143ea7;
+  color: #1876b4;
   background-color: transparent;
 }
 

@@ -115,8 +115,35 @@ function MenuNew() {
             </ListItemButton>
           </ListItem>
           ))}
-
+          {user && user.isGM && <ListItem key={99}
+            onClick={() => { menuItemClick(menuPanel.link) }}
+            disablePadding sx={{
+              display: 'block',
+              background: isSelected(menuPanel.link) ? PRIMARY_COLOR : theme.palette.background,
+              color: isSelected(menuPanel.link) ? "white" : theme.palette.text.primary
+            }}
+            style={{ display: !menuPanel.needUser || menuPanel.needUser && user != null ? 'block' : 'none' }}
+          >
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: 'initial',
+                px: 2.5,
+              }}>
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: 3,
+                  justifyContent: 'center',
+                  color: isSelected(menuPanel.link) ? "white" : theme.palette.text.primary
+                }}>
+                {menuPanel.icon}
+              </ListItemIcon>
+              <ListItemText primary={menuPanel.label} />
+            </ListItemButton>
+          </ListItem>}
         </MenuList>
+
       </Paper>
 
 
